@@ -22,10 +22,10 @@
   </head>
 
   <body class="font-lato">
-    <div class="container mx-auto px-16">
+    <div class="container mx-auto px-8 lg:px-16">
       <header>
         <!-- navbar section -->
-        <div class="navbar bg-white lg:bg-[#F85559]  lg:py-4 px-6 lg:px-10 mt-10 lg:text-white rounded-full">
+        <div class="navbar justify-center bg-white lg:bg-[#F85559]  lg:py-4 px-6 lg:px-10 mt-10 lg:text-white rounded-full">
           <div class="navbar-start">
             <div class="dropdown">
               <ul tabindex="0" class=" hidden lg:flex space-x-4 ">
@@ -46,7 +46,17 @@
                 <li><a>Shop</a></li>
                 <li><a>Fruits</a></li>
                 <li><a>About</a></li>
+                <li>
+                  <input type="text" placeholder="Search here..." class=" p-2 rounded-full border-2 border-[#F85559]" />
+              <button class="absolute top-1.5 right-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="gray">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+                </li>
               </ul>
+
             </div>
           </div>
           <div class="navbar-center">
@@ -74,7 +84,7 @@
                 class="absolute w-full h-full flex flex-col gap-1 md:gap-8 justify-center items-center text-center text-white">
                 <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
                 <p>We supply highly quality organic products</p>
-                <button class="btn btn-sm lg:btn-md btn-error ">Shop now</button>
+                <button class="btn btn-sm md:btn-md bg-[#F85559] border-[#F85559] ">Shop now</button>
               </div>
               <img src="images/banner1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -90,7 +100,7 @@
                 class="absolute w-full h-full flex flex-col gap-1 md:gap-8 justify-center items-center text-center text-white">
                 <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
                 <p>We supply highly quality organic products</p>
-                <button class="btn btn-sm lg:btn-md btn-error">Shop Now</button>
+                <button class="btn btn-sm md:btn-md bg-[#F85559] border-[#F85559]">Shop Now</button>
               </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a>
@@ -105,7 +115,7 @@
                 class="absolute w-full h-full flex flex-col gap-1 md:gap-8 justify-center items-center text-center text-white">
                 <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
                 <p>We supply highly quality organic products</p>
-                <button class="btn btn-sm lg:btn-md btn-error">Shop Now</button>
+                <button class="btn btn-sm md:btn-md bg-[#F85559] border-[#F85559]">Shop Now</button>
               </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a>
@@ -120,7 +130,7 @@
                 class="absolute w-full h-full flex flex-col gap-1 md:gap-8 justify-center items-center text-center text-white">
                 <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
                 <p>We supply highly quality organic products</p>
-                <button class="btn btn-sm lg:btn-md btn-error">Shop Now</button>
+                <button class="btn btn-sm md:btn-md bg-[#F85559] border-[#F85559]">Shop Now</button>
               </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a>
@@ -196,7 +206,7 @@
             <!-- first card -->
             <div class="card  bg-base-100 drop-shadow-xl border-gray-200 border-2 lg:my-10 pt-12 ">
               <figure class="px-10 pt-10">
-                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                <img src="./images/fruit6.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -220,7 +230,7 @@
                     d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
                     fill="#FBC0A8" />
                 </svg>
-                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                <button class="btn text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
                 <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                     <img src="images/fruit6.png" class="rounded-xl mx-auto pb-4" />
@@ -250,7 +260,7 @@
                     <div class="flex justify-center modal-action">
                       <!-- if there is a button in form, it will close the modal -->
                       <button class="btn btn-outline border-[#F85559]">Close</button>
-                      <button class="btn btn-error bg-[#F85559]">BUY NOW</button>
+                      <button class="btn bg-[#F85559]">BUY NOW</button>
                     </div>
                   </form>
                 </dialog>
@@ -259,7 +269,7 @@
             <!-- second card -->
             <div class="card bg-base-100 drop-shadow-xl  border-gray-200 border-2 lg:my-10 pt-12">
               <figure class="px-10 pt-10">
-                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                <img src="./images/fruit7.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -283,7 +293,7 @@
                     d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
                     fill="#FBC0A8" />
                 </svg>
-                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                <button class="btn text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
                 <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                     <img src="images/fruit7.png" class="rounded-xl mx-auto pb-4" />
@@ -313,7 +323,7 @@
                     <div class="flex justify-center modal-action">
                       <!-- if there is a button in form, it will close the modal -->
                       <button class="btn btn-outline border-[#F85559]">Close</button>
-                      <button class="btn btn-error bg-[#F85559]">BUY NOW</button>
+                      <button class="btn bg-[#F85559]">BUY NOW</button>
                     </div>
                   </form>
                 </dialog>
@@ -322,7 +332,7 @@
             <!-- third card -->
             <div class="card  bg-base-100 drop-shadow-xl  border-gray-200 border-2 lg:my-10 pt-12">
               <figure class="px-10 pt-10">
-                <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                <img src="./images/fruit8.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -346,7 +356,7 @@
                     d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
                     fill="#FBC0A8" />
                 </svg>
-                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                <button class="btn text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
                 <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                     <img src="images/fruit8.png" class="rounded-xl mx-auto pb-4" />
@@ -376,7 +386,7 @@
                     <div class="flex justify-center modal-action">
                       <!-- if there is a button in form, it will close the modal -->
                       <button class="btn btn-outline border-[#F85559]">Close</button>
-                      <button class="btn btn-error bg-[#F85559]">BUY NOW</button>
+                      <button class="btn bg-[#F85559]">BUY NOW</button>
                     </div>
                   </form>
                 </dialog>
@@ -385,7 +395,7 @@
             <!-- fourth card -->
             <div class="card bg-base-100 drop-shadow-xl  border-gray-200 border-2 lg:my-10 pt-12">
               <figure class="px-10 pt-10">
-                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                <img src="./images/fruit9.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -409,7 +419,7 @@
                     d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
                     fill="#FBC0A8" />
                 </svg>
-                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                <button class="btn text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
                 <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                     <img src="images/fruit9.png" class="rounded-xl mx-auto pb-4" />
@@ -439,14 +449,14 @@
                     <div class="flex justify-center modal-action">
                       <!-- if there is a button in form, it will close the modal -->
                       <button class="btn btn-outline border-[#F85559]">Close</button>
-                      <button class="btn btn-error bg-[#F85559]">BUY NOW</button>
+                      <button class="btn bg-[#F85559]">BUY NOW</button>
                     </div>
                   </form>
                 </dialog>
               </div>
             </div>
           </div>
-          <div class="btn btn-error text-white bg-[#F85559] border-[#F85559] w-32 self-center mt-7 lg:mt-0">Shop All</div>
+          <div class="btn text-white bg-[#F85559] border-[#F85559] w-32 self-center mt-7 lg:mt-0">Shop All</div>
         </div>
         <!--  team member section -->
         <div class="hero my-12 md:my-20 lg:my-36 "
